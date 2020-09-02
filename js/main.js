@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // function di next
-  $("next").click(nextImg);
+  $("next").click(
 
   function nextImg(){
     var imgActive = $("img.active");
@@ -14,4 +14,6 @@ $(document).ready(function(){
 
     nextImg.addClass("active");
   }
+
+  );
 });
