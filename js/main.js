@@ -16,4 +16,21 @@ $(document).ready(function(){
   }
 
   );
+
+  $("prev").click(
+
+  function (){
+    var imgActive = $("img.active");
+    imgActive.removeClass("active");
+
+    if(imgActive.hasClass("first") == true) {
+      var nextImg = $("img.last");
+    } else {
+      var nextImg = imgActive.prev();
+    }
+
+    nextImg.addClass("active");
+  }
+
+  );
 });
