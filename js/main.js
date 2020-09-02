@@ -2,7 +2,7 @@ $(document).ready(function(){
   // function di next
   $("next").click(
 
-  function nextImg(){
+  function (){
     var imgActive = $("img.active");
     imgActive.removeClass("active");
 
